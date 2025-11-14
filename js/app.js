@@ -81,4 +81,22 @@ document.addEventListener("DOMContentLoaded", () => {
         // If unknown message
         return `
             I'm not fully sure how to answer that yet 🤔.<br>
-            But you can ask me anything
+            But you can ask me anything about Tessforma Studio or Tessforma Academy.
+        `;
+    }
+
+    // On send
+    sendBtn.addEventListener("click", () => {
+        let text = userInput.value.trim();
+        if (text === "") return;
+
+        addMessage("user", text);
+
+        setTimeout(() => {
+            let reply = getAssistantReply(text);
+            addMessage("assistant", reply);
+        }, 600);
+
+        userInput.value = "";
+    });
+});
