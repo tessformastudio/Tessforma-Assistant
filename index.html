@@ -1,38 +1,165 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tessforma Assistant</title>
-    <link rel="stylesheet" href="css/style.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tessforma Assistant · Tessforma Studio & Academy</title>
+  <meta name="description" content="Tessforma Assistant — Quick booking, service guides & contact for Tessforma Studio and Tessforma Academy. Transforming Ideas. Designing Impact." />
+  <link rel="icon" href="assets/logos/favicon.png" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-    <header>
-        <h1>Tessforma Assistant</h1>
-        <p>Your smart guide for Tessforma Studio & Tessforma Academy</p>
-    </header>
+  <!-- PRELOADER -->
+  <div id="preloader" class="preloader">
+    <div class="preloader-inner">
+      <div class="logo-mark">T</div>
+      <div class="loader-bar"></div>
+    </div>
+  </div>
 
-    <main>
-        <section id="assistant-box">
-            <div id="conversation"></div>
+  <!-- SITE -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#">
+        <img src="assets/logos/logo-gradient.png" alt="Tessforma Studio logo" class="logo" />
+        <div class="brand-text">
+          <h1>Tessforma</h1>
+          <small>Studio · Academy</small>
+        </div>
+      </a>
 
-            <div id="input-area">
-                <input 
-                    type="text" 
-                    id="userInput" 
-                    placeholder="Ask Tessforma anything..."
-                    autofocus
-                />
-                <button onclick="sendMessage()">Send</button>
-            </div>
-        </section>
-    </main>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#academy">Academy</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact" class="btn-cta">Get Quote</a>
+      </nav>
+    </div>
+  </header>
 
-    <footer>
-        <p>© 2025 Tessforma Studio & Tessforma Academy</p>
-    </footer>
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h2>Transforming Ideas. Designing Impact.</h2>
+          <p>Professional graphic design, desktop publishing, website creation, video editing & creative classes — ready to help your brand stand out.</p>
 
-    <script src="js/app.js"></script>
+          <div class="hero-ctas">
+            <a href="https://wa.me/2349018341741" class="btn primary" target="_blank" rel="noopener">Chat on WhatsApp</a>
+            <a href="mailto:tessformastudio@gmail.com" class="btn outline">Email Us</a>
+          </div>
+
+          <ul class="features">
+            <li>✅ 10% off your first order</li>
+            <li>⚡ Fast turnaround</li>
+            <li>🎓 Academy courses & tutorials</li>
+          </ul>
+        </div>
+
+        <div class="hero-right">
+          <img src="assets/images/hero-sample.png" alt="Creative studio preview" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services" class="section services">
+      <div class="container">
+        <h3>Our Core Services</h3>
+        <div class="cards">
+          <article class="card">
+            <h4>Graphic Design</h4>
+            <p>Logos, flyers, social posts, banners — polished visuals that convert.</p>
+          </article>
+
+          <article class="card">
+            <h4>Desktop Publishing</h4>
+            <p>Book layouts, magazines, certificates & print-ready files.</p>
+          </article>
+
+          <article class="card">
+            <h4>Website Creation</h4>
+            <p>Clean, responsive websites & landing pages for your brand.</p>
+          </article>
+
+          <article class="card">
+            <h4>Video Editing & Content</h4>
+            <p>Promo videos, training clips & content writing that tells your story.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMY -->
+    <section id="academy" class="section academy">
+      <div class="container">
+        <h3>Tessforma Academy</h3>
+        <p>Practical online courses for young learners and creatives — graphic design, powerpoints, and hands-on tutorials.</p>
+        <div class="academy-cta">
+          <a href="https://wa.me/2349018341741" class="btn primary" target="_blank">Enroll / Ask About Classes</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="section portfolio">
+      <div class="container">
+        <h3>Portfolio Samples</h3>
+        <p>Recent work — replace these placeholders with your images in assets/images/portfolio-*.png</p>
+        <div class="portfolio-grid">
+          <img src="assets/images/portfolio-1.png" alt="portfolio 1" />
+          <img src="assets/images/portfolio-2.png" alt="portfolio 2" />
+          <img src="assets/images/portfolio-3.png" alt="portfolio 3" />
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container contact-grid">
+        <div>
+          <h3>Ready to start?</h3>
+          <p>Send project details on WhatsApp or email us your brief. We respond fast.</p>
+
+          <ul class="contact-list">
+            <li>📱 WhatsApp: <a href="https://wa.me/2349018341741">+234 901 834 1741</a></li>
+            <li>✉️ Email: <a href="mailto:tessformastudio@gmail.com">tessformastudio@gmail.com</a></li>
+            <li>📷 Instagram / Facebook / Twitter: <strong>@tessformastudio</strong></li>
+          </ul>
+
+          <div class="hero-ctas">
+            <a href="https://wa.me/2349018341741" class="btn primary">Start Chat</a>
+            <a href="mailto:tessformastudio@gmail.com" class="btn outline">Send Brief</a>
+          </div>
+        </div>
+
+        <form id="lead-form" class="lead-form" onsubmit="return handleFormSubmit(event)">
+          <label>
+            Your name
+            <input type="text" name="name" required />
+          </label>
+          <label>
+            Project / Message
+            <textarea name="message" rows="4" required></textarea>
+          </label>
+          <label>
+            Contact (WhatsApp or email)
+            <input type="text" name="contact" required />
+          </label>
+          <button type="submit" class="btn primary">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Tessforma Studio</strong> · Transforming Ideas, Designing Impact.</p>
+      <p>Working hours: Mon–Fri 07:00–21:00 • Closed Sat</p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
-  </html>
+            </html>
