@@ -1,0 +1,20 @@
+{
+    "services": [
+        {
+            "keyword": "logo",
+            "response": "Tessforma Studio offers professional Logo & Brand Identity Design. We also prepare brand guidelines and business cards."
+        },
+        {
+            "keyword": "academy",
+            "response": "Tessforma Academy provides digital training, graphic design lessons, and screen-recorded tutorials."
+        },
+        {
+            "keyword": "contact",
+            "response": "You can message us via WhatsApp: 09018341741. Studio Email: tessformastudio@gmail.com. Academy Email: tessformaacademy@gmail.com."
+        },
+        {
+            "keyword": "services",
+            "response": "We offer Graphic Design, Branding, Book Formatting, Social Media Design, Presentation Design, and Training via Tessforma Academy."
+        }
+    ]
+}
