@@ -1,32 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tessforma Assistant</title>
-
-    <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tessforma Assistant — Tessforma Studio & Academy</title>
+  <meta name="description" content="Tessforma Assistant — quick help for design, publishing, training & orders." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/logos/favicon.png" />
 </head>
-
 <body>
-
-    <header class="header">
-        <img src="assets/logos/tessforma-studio-logo.png" class="brand-logo" alt="Tessforma Logo">
+  <header class="site-header">
+    <div class="brand">
+      <div class="logo-mark">TS</div>
+      <div>
         <h1>Tessforma Assistant</h1>
-        <p class="subtitle">Your Creative, Learning & Productivity Partner</p>
-    </header>
+        <p class="tag">Transforming Ideas. Designing Impact.</p>
+      </div>
+    </div>
+    <nav class="top-nav">
+      <a href="#services">Services</a>
+      <a href="#academy">Academy</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section class="assistant-box">
-        <div class="messages" id="messages"></div>
-
-        <div class="input-area">
-            <input type="text" id="userInput" placeholder="Type your message… (e.g. I need a logo)">
-            <button id="sendBtn">
-                <img src="assets/icons/send.svg" alt="Send">
-            </button>
+  <main>
+    <section class="hero">
+      <div class="hero-left">
+        <h2>Your Creative Assistant — Studio & Academy</h2>
+        <p>Quickly get pricing, see samples, request a quote, or enroll in Tessforma Academy. Start by asking below 👇</p>
+        <div class="quick-cta">
+          <button data-suggest="logo">I want a logo</button>
+          <button data-suggest="bookformat">Book formatting</button>
+          <button data-suggest="enroll">Enroll in Academy</button>
         </div>
+      </div>
+      <div class="assistant-card">
+        <div id="assistant" class="assistant">
+          <div id="messages" class="messages"></div>
+          <form id="chatForm" class="chat-form">
+            <input id="userInput" autocomplete="off" placeholder="Ask me: 'logo pricing', 'portfolio', 'order logo'..." />
+            <button type="submit">Send</button>
+          </form>
+          <div id="suggestions" class="suggestions"></div>
+        </div>
+      </div>
     </section>
 
-    <script src="app.js"></script>
+    <section id="services" class="services">
+      <h3>Studio Services</h3>
+      <div class="service-grid" id="serviceGrid"></div>
+    </section>
+
+    <section id="academy" class="academy">
+      <h3>Tessforma Academy</h3>
+      <p>Personalized online lessons for learners (ages 7–14+) — creative & academic classes.</p>
+      <div class="academy-list" id="academyList"></div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Contact & Start a Project</h3>
+      <p>WhatsApp: <a href="https://wa.me/2349018341741?text=Hello%20Tessforma" target="_blank">+234 901 834 1741</a> • Email: <a href="mailto:tessformastudio@gmail.com">tessformastudio@gmail.com</a></p>
+      <div class="contact-cards">
+        <a class="contact-card" href="https://wa.me/2349018341741?text=Hello%20Tessforma%20Studio" target="_blank">Start on WhatsApp</a>
+        <a class="contact-card" href="mailto:tessformastudio@gmail.com">Email Us</a>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <p>© <strong>Tessforma Studio</strong> • Transforming Ideas. Designing Impact.</p>
+      <div class="socials">@tessformastudio</div>
+    </footer>
+  </main>
+
+  <!-- load config and services -->
+  <script src="assistant-config.json"></script>
+  <script src="services.json"></script>
+
+  <script src="app.js"></script>
 </body>
 </html>
