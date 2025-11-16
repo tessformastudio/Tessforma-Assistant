@@ -1,0 +1,114 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "created": "2025-10-09",
+    "lang_support": ["en","fr","es","ar","de"]
+  },
+  "intents": {
+    "service_logo": {
+      "title": "Logo Design",
+      "desc": "Professional logo (3 concepts, 2 revisions). Delivered as PNG, SVG, PDF.",
+      "price":"₦8,000 - ₦25,000",
+      "triggers":["logo","logotype","emblem","brand mark"],
+      "keywords":["logo","brand","logotype","icon"],
+      "examples":["i need a logo","design logo","logo for my brand"]
+    },
+    "service_flyer": {
+      "title":"Flyer / Poster Design",
+      "desc":"Flyer and poster design, printable and social formats, 2 revisions.",
+      "price":"₦4,000 - ₦12,000",
+      "triggers":["flyer","poster","leaflet","pamphlet"],
+      "keywords":["flyer","poster","leaflet"]
+    },
+    "service_banner": {
+      "title":"Banner Design & Print",
+      "desc":"Design + print (size options available).",
+      "price":"₦11,000 - ₦30,000",
+      "triggers":["banner","rollup","backdrop","standee"],
+      "keywords":["banner","print","backdrop"]
+    },
+    "service_publishing": {
+      "title":"Book / eBook Formatting & Layout",
+      "desc":"Full book formatting for print and eBook (Word, PDF, InDesign-ready).",
+      "price":"₦10,000 - ₦60,000",
+      "triggers":["book","ebook","format","layout","pagination"],
+      "keywords":["book","ebook","formatting","layout"]
+    },
+    "service_stationery": {
+      "title":"Business Stationery & Letterhead",
+      "desc":"Letterhead, invoice, envelope, business card design.",
+      "price":"₦5,000 - ₦15,000",
+      "triggers":["letterhead","invoice","business card","stationery"],
+      "keywords":["business card","letterhead","invoice"]
+    },
+    "service_ppt": {
+      "title":"PowerPoint & Presentation Design",
+      "desc":"Custom pitch decks and slide design; editable files.",
+      "price":"₦8,000 - ₦30,000",
+      "triggers":["powerpoint","presentation","slide","ppt"],
+      "keywords":["presentation","ppt","slides"]
+    },
+    "service_website": {
+      "title":"Website Creation & Management",
+      "desc":"Simple brochure websites, responsive, hosting guidance.",
+      "price":"₦50,000 - ₦200,000",
+      "triggers":["website","web","site","landing page"],
+      "keywords":["website","web","landing","site"]
+    },
+    "service_video": {
+      "title":"Video Editing",
+      "desc":"Social clips, promo videos, basic motion graphics.",
+      "price":"₦7,000 - ₦50,000",
+      "triggers":["video","edit","editing","motion"],
+      "keywords":["video","edit","motion"]
+    },
+    "academy_enroll": {
+      "title":"Tessforma Academy Enrollment",
+      "desc":"Enroll learners for creative & academic classes; personalized tracks.",
+      "price":"Contact for pricing",
+      "triggers":["enroll","academy","class","join","register"],
+      "keywords":["enroll","academy","class"]
+    },
+    "pricing": {
+      "title":"Pricing & Packages",
+      "desc":"View our services pricing guide and package options.",
+      "price":"See breakdown",
+      "triggers":["price","cost","how much"],
+      "keywords":["price","cost","fee"]
+    },
+    "contact": {
+      "title":"Contact & Support",
+      "desc":"WhatsApp, Email, or Book a Call with Tessforma Studio.",
+      "triggers":["contact","help","support","reach"],
+      "keywords":["contact","support","help"]
+    },
+    "portfolio": {
+      "title":"Portfolio & Samples",
+      "desc":"View portfolio samples and case studies.",
+      "triggers":["portfolio","samples","work","case study"],
+      "keywords":["portfolio","samples","work"]
+    },
+    "order_process": {
+      "title":"Order Process",
+      "desc":"How to place an order, turnaround time, revisions.",
+      "triggers":["order","process","how to order","turnaround"],
+      "keywords":["order","process","turnaround"]
+    },
+    "payment_methods": {
+      "title":"Payment Methods",
+      "desc":"Paystack (card) or Bank transfer (OPay) — 50% deposit, 50% on completion.",
+      "triggers":["payment","pay","deposit","bank","card"],
+      "keywords":["pay","payment","deposit","bank","card"]
+    },
+
+    /* Additional intents (shortened) - include many service-specific triggers */
+    "service_branding": {"title":"Brand Identity Pack","desc":"Logo + colors + brand guide","price":"₦20,000 - ₦80,000","triggers":["brand identity","brand pack","branding"],"keywords":["branding","identity"]},
+    "service_mockup": {"title":"Mockup & Presentation","desc":"Device and print mockups","price":"₦3,000 - ₦12,000","triggers":["mockup","presentation"],"keywords":["mockup"]},
+    "service_invoice": {"title":"Invoice & Forms","desc":"Editable invoice templates","triggers":["invoice","forms"],"keywords":["invoice","forms"], "price":"₦2,500 - ₦8,000"},
+
+    /* ... (add as many as needed) ... */
+
+    "small_talk_greeting": {"title":"Greeting","desc":"Hi! How can I help today?","triggers":["hello","hi","good morning","good evening"],"keywords":[]},
+    "small_talk_thanks": {"title":"Thanks Reply","desc":"You're welcome!","triggers":["thanks","thank you"],"keywords":[]}
+  }
+    }
