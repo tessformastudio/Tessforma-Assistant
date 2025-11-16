@@ -1,0 +1,72 @@
+{
+  "en": {
+    "welcome_message":"Welcome to Tessforma Assistant — ask about logo design, flyers, book formatting, Academy enrollment, and more. Type your question or pick a quick action.",
+    "language_changed":"Language changed",
+    "price":"Price",
+    "pay_card":"Pay with Card",
+    "pay_bank":"Bank Transfer",
+    "contact_whatsapp":"Contact on WhatsApp",
+    "sorry_no_understand":"Sorry, I couldn't understand fully. Please rephrase or choose a quick option.",
+    "ask_clarify":"Could you tell me a bit more? (e.g. 'I need a logo for a bakery')",
+    "bank_transfer_instructions":"To pay by bank transfer, use the details below:",
+    "contact_header":"Contact Tessforma Studio - we're happy to help",
+    "whatsapp":"WhatsApp",
+    "email":"Email"
+  },
+  "fr": {
+    "welcome_message":"Bienvenue à Tessforma Assistant — demandez un logo, un flyer, mise en page de livre, inscription à l'académie, et plus.",
+    "language_changed":"Langue modifiée",
+    "price":"Prix",
+    "pay_card":"Payer par carte",
+    "pay_bank":"Virement bancaire",
+    "contact_whatsapp":"Contactez sur WhatsApp",
+    "sorry_no_understand":"Désolé, je n'ai pas bien compris. Réformulez s'il vous plaît.",
+    "ask_clarify":"Pouvez-vous donner plus de détails ? (ex. 'Je veux un logo pour une boulangerie')",
+    "bank_transfer_instructions":"Pour payer par virement bancaire, utilisez les informations ci-dessous :",
+    "contact_header":"Contactez Tessforma Studio - nous sommes heureux d'aider",
+    "whatsapp":"WhatsApp",
+    "email":"E-mail"
+  },
+  "es": {
+    "welcome_message":"Bienvenido a Tessforma Assistant — solicita logo, folleto, maquetación de libro, inscripción en la academia, y más.",
+    "language_changed":"Idioma cambiado",
+    "price":"Precio",
+    "pay_card":"Pagar con tarjeta",
+    "pay_bank":"Transferencia bancaria",
+    "contact_whatsapp":"Contactar por WhatsApp",
+    "sorry_no_understand":"Lo siento, no entendí. Por favor, reformule.",
+    "ask_clarify":"¿Puedes dar más detalles? (ej.: 'Necesito un logo para una panadería')",
+    "bank_transfer_instructions":"Para pagar por transferencia bancaria, usa los siguientes datos:",
+    "contact_header":"Contacte Tessforma Studio - estamos encantados de ayudar",
+    "whatsapp":"WhatsApp",
+    "email":"Correo"
+  },
+  "ar": {
+    "welcome_message":"مرحبًا بك في مساعد تيسفورما — اسأل عن تصميم شعار، منشورات، تنسيق كتب، التسجيل في الأكاديمية، والمزيد.",
+    "language_changed":"تم تغيير اللغة",
+    "price":"السعر",
+    "pay_card":"الدفع بالبطاقة",
+    "pay_bank":"تحويل بنكي",
+    "contact_whatsapp":"تواصل عبر WhatsApp",
+    "sorry_no_understand":"عذرًا، لم أفهم جيدًا. يرجى إعادة الصياغة.",
+    "ask_clarify":"هل يمكنك توضيح أكثر؟ (مثال: 'أريد شعار لمخبز')",
+    "bank_transfer_instructions":"للدفع بالتحويل البنكي، استخدم البيانات التالية:",
+    "contact_header":"تواصل مع تيسفورما ستوديو - نحن هنا للمساعدة",
+    "whatsapp":"واتساب",
+    "email":"البريد الإلكتروني"
+  },
+  "de": {
+    "welcome_message":"Willkommen beim Tessforma Assistant — frage nach Logo, Flyer, Buchsatz, Academy-Anmeldung und mehr.",
+    "language_changed":"Sprache geändert",
+    "price":"Preis",
+    "pay_card":"Mit Karte bezahlen",
+    "pay_bank":"Banküberweisung",
+    "contact_whatsapp":"Per WhatsApp kontaktieren",
+    "sorry_no_understand":"Entschuldigung, das habe ich nicht verstanden. Bitte formuliere um.",
+    "ask_clarify":"Kannst du mehr Details geben? (z.B. 'Ich brauche ein Logo für eine Bäckerei')",
+    "bank_transfer_instructions":"Für Banküberweisung nutzen Sie bitte die folgenden Angaben:",
+    "contact_header":"Kontakt zu Tessforma Studio - wir helfen gerne",
+    "whatsapp":"WhatsApp",
+    "email":"E-Mail"
+  }
+}
