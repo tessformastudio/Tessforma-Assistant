@@ -1,95 +1,93 @@
 :root{
-  --bg: #F2F2F2;            /* background */
-  --card: #ffffff;
-  --purple: #6A0DAD;        /* primary */
-  --orange: #FF6B35;        /* accent */
-  --blue: #0077FF;          /* accent */
-  --muted: #6b7280;
-  --radius: 12px;
-  --shadow: 0 6px 18px rgba(13,12,20,0.06);
-  --glass: rgba(255,255,255,0.6);
+  --purple: #6A0DAD;
+  --orange: #FF6B35;
+  --blue: #0077FF;
+  --bg:#F2F2F2;
+  --card:#ffffff;
+  --muted:#6b7280;
+  --shadow: 0 6px 18px rgba(23,23,23,0.08);
+  --radius:12px;
+  --max-width:1100px;
+  --text:#111827;
 }
 
-/* Dark theme vars */
-:root[data-theme="dark"]{
-  --bg: #0f1724;
-  --card: #0b1220;
-  --muted: #9aa4b2;
-  --glass: rgba(255,255,255,0.04);
+/* Dark theme variables (auto adjusted) */
+:root.dark{
+  --bg:#0b0b0f;
+  --card:#0f1724;
+  --text:#e6eef8;
+  --muted:#9aa4b2;
+  --shadow: 0 6px 18px rgba(0,0,0,0.6);
 }
 
-/* Reset & layout */
 *{box-sizing:border-box}
-html,body{height:100%;margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;}
-body{background:var(--bg); color:#111; -webkit-font-smoothing:antialiased}
-.container{max-width:1100px;margin:24px auto;padding:16px}
+html,body,#app{height:100%}
+body{
+  margin:0;
+  font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:linear-gradient(180deg,var(--bg),#fff 60%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
 
-/* Header */
-.site-header{display:flex;justify-content:space-between;align-items:center;padding:14px 0}
-.brand{display:flex;align-items:center;gap:12px}
-.brand-icon{width:48px;height:48px}
-.brand-text h1{margin:0;font-size:18px;color:var(--purple)}
-.tagline{margin:0;font-size:12px;color:var(--muted)}
+/* Layout */
+.app{display:flex; gap:20px; max-width:1400px; margin:18px auto; padding:12px;}
+.sidebar{
+  width:300px;
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:16px;
+  box-shadow:var(--shadow);
+  display:flex; flex-direction:column; gap:12px;
+}
+.brand{display:flex; gap:12px; align-items:center}
+.brand img{width:56px; height:56px; object-fit:contain; border-radius:8px}
+.brand h1{font-size:1.05rem; margin:0}
+.tagline{color:var(--muted); margin:0; font-size:0.85rem}
 
-/* Top nav */
-.top-nav{display:flex;align-items:center;gap:8px}
-.top-nav select, .top-nav button{padding:8px;border-radius:8px;border:1px solid rgba(0,0,0,0.06);background:var(--card)}
-.top-nav .contact{padding:8px 12px;border-radius:8px;text-decoration:none;background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff}
+.nav{margin-top:4px}
+.nav h3{margin:8px 0 4px}
+.nav-btn{width:100%; text-align:left; padding:8px; border:none; background:transparent; cursor:pointer; border-radius:8px}
+.nav-btn:hover{background:linear-gradient(90deg, rgba(106,13,173,0.06), rgba(255,107,53,0.04))}
 
-/* Hero */
-.hero{display:flex;gap:20px;align-items:flex-start;margin:18px 0}
-.hero-left{flex:1}
-.hero-right{width:420px;max-width:45%}
+.payment-card{background:linear-gradient(90deg, rgba(106,13,173,0.03), rgba(255,107,53,0.02)); padding:10px; border-radius:10px}
+.pay-btn{width:48%; padding:8px; margin:4px 1%; border-radius:8px; border:1px solid rgba(0,0,0,0.06); cursor:pointer}
+.lang-mode{display:flex; flex-direction:column; gap:6px; font-size:0.95rem}
+.switch{position:relative; display:inline-block; width:46px; height:26px}
+.switch input{display:none}
+.slider{position:absolute; cursor:pointer; inset:0; background:#ccc; border-radius:34px}
+.slider:before{content:""; position:absolute; height:20px; width:20px; left:3px; top:3px; background:white; border-radius:50%; transition:0.2s}
+.switch input:checked + .slider{background:linear-gradient(90deg,var(--purple),var(--orange))}
+.switch input:checked + .slider:before{transform:translateX(20px)}
 
-/* Chat Card */
-.chat-card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;height:520px}
-.chat-header{padding:12px 16px;border-bottom:1px solid rgba(0,0,0,0.04);display:flex;justify-content:space-between;align-items:center}
-.chat-messages{flex:1;padding:16px;overflow-y:auto;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.01))}
-.message{max-width:78%;margin-bottom:12px;padding:10px 12px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.04)}
-.bot{background:linear-gradient(90deg,var(--purple),var(--blue));color:#fff;border-bottom-left-radius:2px}
-.user{background:var(--card);border:1px solid rgba(0,0,0,0.06);align-self:flex-end;color:#111}
-.typing{opacity:0.9;font-style:italic;display:inline-block}
+.sidebar-footer{margin-top:auto; font-size:0.8rem; color:var(--muted)}
 
-/* Chat controls */
-.chat-controls{display:flex;padding:12px;border-top:1px solid rgba(0,0,0,0.04);gap:8px}
-#chat-input{flex:1;padding:10px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.08);background:transparent}
-#mic-btn{width:44px;height:44px;border-radius:8px;border:0;background:linear-gradient(90deg,var(--orange),var(--purple));display:flex;align-items:center;justify-content:center}
-#mic-btn img{width:20px;height:20px}
-#send-btn{background:var(--blue);color:#fff;padding:10px 14px;border-radius:10px;border:0}
+.main{flex:1; display:flex; flex-direction:column; gap:12px}
+.main-header{display:flex; justify-content:space-between; align-items:flex-start; gap:12px}
+.header-left h2{margin:0}
+.header-right{display:flex; gap:8px; align-items:center}
+.contact-link{color:var(--muted); text-decoration:none; font-size:0.95rem}
 
-/* Quick actions */
-.quick-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
-.quick-actions button{padding:10px 12px;border-radius:10px;border:1px solid rgba(0,0,0,0.06);background:var(--card)}
+.chat-area{background:transparent; border-radius:12px; min-height:540px; display:flex; flex-direction:column}
+.chat-messages{flex:1; padding:16px; background:transparent; overflow:auto; display:flex; flex-direction:column; gap:12px}
+.message{max-width:78%; padding:12px 14px; border-radius:12px; box-shadow:var(--shadow); background:var(--card)}
+.message.user{align-self:flex-end; background:linear-gradient(90deg,var(--purple),var(--orange)); color:white}
+.message.assistant{align-self:flex-start; background:rgba(0,119,255,0.05); color:var(--text)}
 
-/* Services & accordion */
-.services{margin-top:18px}
-.accordion .item{background:var(--card);border-radius:10px;padding:12px;margin-bottom:8px;box-shadow:var(--shadow)}
-.item h4{margin:0}
-.btn{padding:10px 14px;border-radius:8px;text-decoration:none}
-.btn.accent{background:linear-gradient(90deg,var(--purple),var(--orange));color:#fff}
-.btn.outline{border:1px solid rgba(0,0,0,0.08);background:transparent}
-
-/* footer */
-.site-footer{text-align:center;margin:28px 0;color:var(--muted)}
-
-/* small helpers */
-.small{font-size:13px;color:var(--muted)}
-.link{background:transparent;border:0;color:var(--muted);cursor:pointer}
-
-/* animations */
-.fade-in{animation:fadeIn 320ms ease-out}
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.chat-form{display:flex; gap:8px; align-items:center; padding:10px; border-radius:10px; background:var(--card); box-shadow:var(--shadow)}
+#user-input{flex:1; padding:10px 12px; border-radius:8px; border:1px solid rgba(0,0,0,0.06); font-size:1rem}
+#send-btn{background:var(--purple); color:white; border:none; padding:10px 14px; border-radius:8px; cursor:pointer}
+#voice-btn{background:transparent; border:none; cursor:pointer; font-size:1.1rem}
+.inline-payments{display:flex; gap:6px}
+.pay-inline{background:transparent; border:1px solid rgba(0,0,0,0.08); padding:8px; border-radius:8px; cursor:pointer}
 
 /* responsive */
 @media (max-width:980px){
-  .hero{flex-direction:column}
-  .hero-right{width:100%;max-width:100%}
-  .chat-card{height:480px}
+  .app{flex-direction:column; padding:8px; margin:8px}
+  .sidebar{width:100%}
+  .main{order:2}
 }
 
-/* mobile */
-@media (max-width:520px){
-  .container{padding:10px}
-  .chat-card{height:420px}
-  .brand-text h1{font-size:15px}
-                         }
+/* accessibility & contrast helpers */
+.message, .nav-btn, .pay-btn, .pay-inline, #send-btn { outline-offset:4px }
