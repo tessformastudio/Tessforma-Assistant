@@ -1,0 +1,60 @@
+[
+  {
+    "category": "Studio",
+    "items": [
+      {
+        "id": "logo",
+        "title": "Logo Design",
+        "price": "₦8,000 — ₦30,000",
+        "description": "Modern logos, 2–3 initial concepts, 2 revisions."
+      },
+      {
+        "id": "flyer",
+        "title": "Flyer & Poster",
+        "price": "₦3,000 — ₦8,000",
+        "description": "Print or digital flyers, A5/A4 formats, ready for print."
+      },
+      {
+        "id": "bookformat",
+        "title": "Book Formatting",
+        "price": "₦5,000 — ₦40,000",
+        "description": "E-book & print layout, TOC, styles, export to PDF/epub."
+      },
+      {
+        "id": "web",
+        "title": "Website Creation",
+        "price": "From ₦50,000",
+        "Creation": "Landing pages, portfolio sites, or simple business sites."
+      },
+      {
+        "id": "video",
+        "title": "Video Editing",
+        "price": "₦5,000 — ₦25,000",
+        "description": "Short edits, tutorial videos, social reels."
+      },
+      {
+        "id": "content",
+        "title": "Content Writing",
+        "price": "₦1,000 — ₦5,000",
+        "description": "Web copy, blog posts, product descriptions."
+      }
+    ]
+  },
+  {
+    "category": "Academy",
+    "items": [
+      {
+        "id": "lessons",
+        "title": "Online Lessons (7–14+)",
+        "price": "From ₦1,500/hr",
+        "description": "Creative & academic classes, personalized learning."
+      },
+      {
+        "id": "courses",
+        "title": "Short Courses",
+        "price": "From ₦8,000",
+        "description": "Short structured courses on design, publishing, and editing."
+      }
+    ]
+  }
+]
