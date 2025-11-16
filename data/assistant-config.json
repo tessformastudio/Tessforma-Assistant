@@ -1,0 +1,44 @@
+{
+  "translations": {
+    "en": {
+      "hero.title": "Your Creative Assistant — Studio & Academy",
+      "hero.sub": "Quickly get pricing, see samples, request a quote, or enroll in Tessforma Academy.",
+      "studio.title": "Studio Services",
+      "academy.title": "Tessforma Academy",
+      "ask": "Ask",
+      "sample": "Sample",
+      "ask_price": "Ask pricing",
+      "welcome": "Hello 👋 Welcome to Tessforma Assistant — how can we help today?",
+      "hint": "Tip: Try \"logo pricing\" or \"enroll academy\" to get started.",
+      "quick.logo": "I want a logo",
+      "quick.book": "Book formatting",
+      "quick.enroll": "Enroll in Academy"
+    },
+    "de": {
+      "hero.title": "Ihr Kreativ-Assistent — Studio & Akademie",
+      "hero.sub": "Schnell Preise erhalten, Beispiele sehen, ein Angebot anfordern oder sich anmelden.",
+      "studio.title": "Studio-Dienste",
+      "academy.title": "Tessforma Akademie",
+      "ask": "Fragen",
+      "sample": "Beispiel",
+      "welcome": "Hallo 👋 Willkommen beim Tessforma Assistant — wie können wir helfen?",
+      "hint": "Tipp: Versuche 'logo preis' oder 'akademie anmelden'.",
+      "quick.logo": "Ich möchte ein Logo",
+      "quick.book": "Buchformatierung",
+      "quick.enroll": "In Akademie einschreiben"
+    },
+    "yo": {
+      "hero.title": "Olùrànlọ́wọ́ Oníṣé — Studio & Academy",
+      "hero.sub": "Gba owo iṣẹ́, wo àpẹẹrẹ, béèrè ìfilọ́lẹ̀ tàbí forúkọsílẹ̀.",
+      "studio.title": "Ìránṣẹ́ Studio",
+      "academy.title": "Tessforma Academy",
+      "ask": "Bẹ́èrè",
+      "sample": "Àpẹrẹ",
+      "welcome": "Báwo 👋 Kaabọ si Tessforma Assistant — báwo la ṣe lè ràn é lọ́́wọ́?",
+      "hint": "Imọran: Ṣàyẹwo 'logo pricing' tàbí 'enroll academy'.",
+      "quick.logo": "Mo fẹ́ logo",
+      "quick.book": "Ìtòlẹ́sẹẹsẹ ìwé",
+      "quick.enroll": "Forúkọsílẹ̀ ni Academy"
+    }
+  }
+}
