@@ -1,95 +1,62 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+:root{
+  --deep-purple: #6A0DAD;
+  --bright-orange: #FF6B35;
+  --electric-blue: #0077FF;
+  --bg: #F2F2F2;
+  --card: #ffffff;
+  --glass: rgba(255,255,255,0.85);
+  --radius: 14px;
+  --shadow: 0 6px 20px rgba(0,0,0,0.08);
+  --accent-grad: linear-gradient(135deg,var(--deep-purple),var(--bright-orange));
 }
 
-body {
-    background: linear-gradient(135deg, #6A0DAD, #FF6B35, #0077FF);
-    min-height: 100vh;
-    padding: 20px;
-    color: #fff;
-}
+*{box-sizing:border-box}
+html,body{height:100%;margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#222}
+a{color:var(--electric-blue); text-decoration:none}
+.site-header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:transparent}
+.brand{display:flex;gap:12px;align-items:center}
+.logo-mark{width:56px;height:56px;border-radius:12px;background:var(--accent-grad);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;box-shadow:var(--shadow)}
+.site-header h1{font-size:18px;margin:0}
+.site-header p{margin:0;color:#555;font-size:13px}
+.top-nav a{margin-left:16px;color:#333;font-weight:600}
 
-.header {
-    text-align: center;
-    margin-bottom: 25px;
-}
+.hero{display:flex;gap:28px;padding:28px;align-items:flex-start;max-width:1200px;margin:18px auto}
+.hero-left{flex:1}
+.hero-left h2{font-size:28px;margin:0 0 8px}
+.hero-left p{color:#444;margin:0 0 18px}
+.quick-cta button{margin-right:8px;margin-bottom:8px;padding:10px 12px;border-radius:8px;border:0;background:#fff;box-shadow:var(--shadow);cursor:pointer}
+.assistant-card{width:420px;max-width:42%;min-width:300px}
+.assistant{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;display:flex;flex-direction:column;height:460px}
+.messages{padding:14px;flex:1;overflow:auto;gap:10px;display:flex;flex-direction:column}
+.msg{max-width:78%;padding:10px 12px;border-radius:12px;line-height:1.35}
+.msg.assistant{background:#F4F6FB;align-self:flex-start}
+.msg.user{background:linear-gradient(90deg,var(--deep-purple),var(--bright-orange));color:white;align-self:flex-end}
+.chat-form{display:flex;padding:12px;border-top:1px solid #eee;background:linear-gradient(180deg,transparent,rgba(0,0,0,0.02))}
+.chat-form input{flex:1;padding:12px;border-radius:8px;border:1px solid #eee;margin-right:8px}
+.chat-form button{background:var(--electric-blue);color:white;border:0;padding:10px 14px;border-radius:8px}
+.suggestions{display:flex;gap:8px;padding:8px 12px;border-top:1px dashed #f0f0f0}
+.suggestions button{background:transparent;border-radius:8px;border:1px solid #eee;padding:8px 10px;cursor:pointer}
 
-.brand-logo {
-    width: 90px;
-    height: auto;
-    margin-bottom: 10px;
-}
+.services, .academy, .contact{max-width:1200px;margin:22px auto;background:var(--glass);padding:18px;border-radius:12px;box-shadow:var(--shadow)}
+.services h3, .academy h3{margin:0 0 12px}
+.service-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.service{background:white;padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(0,0,0,0.05);display:flex;flex-direction:column}
+.service h4{margin:0 0 6px}
+.service p{color:#555;margin:0 0 12px}
+.service .btn{margin-top:auto;padding:10px;border-radius:8px;border:0;background:var(--electric-blue);color:white;cursor:pointer}
 
-.subtitle {
-    opacity: 0.8;
-    margin-top: 5px;
-}
+.contact-cards{display:flex;gap:12px;margin-top:12px}
+.contact-card{padding:12px 14px;background:var(--accent-grad);color:white;border-radius:10px;display:inline-block}
 
-/* Assistant Box */
-.assistant-box {
-    width: 95%;
-    max-width: 600px;
-    background: #ffffff10;
-    backdrop-filter: blur(10px);
-    margin: 0 auto;
-    border-radius: 15px;
-    padding: 20px;
-    border: 1px solid #ffffff30;
-}
+.site-footer{max-width:1200px;margin:18px auto;padding:12px 18px;text-align:center;color:#555; font-size:14px}
+.socials{color:#333;font-weight:600;margin-top:6px}
 
-.messages {
-    height: 420px;
-    overflow-y: auto;
-    padding-right: 10px;
+/* Animations & responsive */
+@media (max-width:900px){
+  .hero{flex-direction:column}
+  .assistant-card{width:100%}
 }
-
-/* Messages */
-.bot-message, .user-message {
-    padding: 12px 14px;
-    margin: 10px 0;
-    max-width: 85%;
-    border-radius: 10px;
-    line-height: 1.5;
-}
-
-.bot-message {
-    background: #ffffff20;
-    border-left: 4px solid #FF6B35;
-}
-
-.user-message {
-    background: #ffffff40;
-    border-right: 4px solid #0077FF;
-    margin-left: auto;
-}
-
-/* Input */
-.input-area {
-    margin-top: 15px;
-    display: flex;
-    align-items: center;
-}
-
-#userInput {
-    width: 100%;
-    padding: 14px;
-    border: none;
-    border-radius: 10px;
-    outline: none;
-    font-size: 16px;
-}
-
-#sendBtn {
-    background: transparent;
-    border: none;
-    margin-left: 8px;
-}
-
-#sendBtn img {
-    width: 28px;
-    filter: invert(1);
-    cursor: pointer;
-}
+.fade-in{animation:fadeIn .45s ease both}
+@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.typing{width:44px;height:8px;border-radius:8px;background:linear-gradient(90deg,#ddd,#ccc);animation:pulse 1s infinite}
+@keyframes pulse{0%{opacity:0.4}50%{opacity:1}100%{opacity:.4}}
