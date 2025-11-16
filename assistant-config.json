@@ -1,9 +1,0 @@
-// assistant-config.json
-window.assistantConfig = {
-  "brand": "Tessforma Studio",
-  "whatsapp": "2349018341741",
-  "email": "tessformastudio@gmail.com",
-  "academyEmail": "tessformaacademy@gmail.com",
-  "social": "@tessformastudio",
-  "tagline": "Transforming Ideas. Designing Impact."
-};
